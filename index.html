@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th ,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 14px;
+            text-align: center;
+        }
+        table{
+            width: 100%;
+        }
+        caption{
+            font-size: 25px;
+        }
+        #form{
+            border: 2px solid black;
+            width: 50%;
+            margin-left: 25%;
+            height: 300px;
+            text-align: center;
+        }
+        #form button{
+            font-size: 17px;
+            width: 25%;
+        }
+    </style>
+</head>
+
+<body>
+    <table id="customers">
+        <caption>CLIENTS:</caption>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Phone Number</th>
+            <th>Email Address</th>
+            <th>Balance</th>
+        </tr>
+    </table>
+    <br><hr>
+    <table id="rich">
+        <caption>CLIENTS - More Than 400:</caption>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Phone Number</th>
+            <th>Email Address</th>
+            <th>Balance</th>
+        </tr>
+    </table>
+    <br><hr>
+    <table id="poor">
+        <caption>CLIENTS - Less Than 200:</caption>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Phone Number</th>
+            <th>Email Address</th>
+            <th>Balance</th>
+        </tr>
+    </table>
+    <br><hr>
+    <h1 style="text-align: center;">Add new client:</h1>
+    <form id="form">
+        <br><br>
+        <label for="idNumber">ID:</label>
+        <input type="number" name="idNumber" id="userId"><br><br>
+        <label for="firstName">First Name:</label>
+        <input type="text" name="firstName" id="userName"><br><br>
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" name="phoneNumber" id="userPhone" minlength="9" maxlength="10"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="userEmail"><br><br>
+        <label for="balance">Balance:</label>
+        <input type="number" name="balance" id="userMoney"><br><br>
+        <button type="submit" id="addBtn">Add</button>
+    </form>
+    <script src="./main.js" type="text/javascript"></script>
+</body>
+
+</html>
